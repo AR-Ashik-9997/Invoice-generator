@@ -56,7 +56,7 @@ const ItemTable = ({ items, updateItem, deleteRow, addRow }: ItemTableProps) => 
                                         type="button"
                                         aria-label="Delete Item Row"
                                         onClick={() => deleteRow(index)}
-                                        className="text-[#ef4444] hover:opacity-80 transition"
+                                        className="text-[#ef4444] hover:opacity-80 transition cursor-pointer"
                                     >
                                         <Trash2 size={13} />
                                     </button>
