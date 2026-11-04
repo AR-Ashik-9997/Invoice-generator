@@ -222,6 +222,7 @@ export const useInvoiceManager = () => {
         setCharge(Number(memo.charge) || 0);
         setDiscount(Number(memo.discount) || 0);
         setItems(memo.items || []);
+        setSidebarOpen(false)
         if (memo.companyName) setCompanyName(memo.companyName);
         if (memo.companyContact) setCompanyContact(memo.companyContact);
         setPublicURL(memo.file_url)

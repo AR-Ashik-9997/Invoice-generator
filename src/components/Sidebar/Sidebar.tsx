@@ -1,5 +1,6 @@
 import { SidebarProps } from '@/lib/types';
 import { Search, Trash2 } from 'lucide-react';
+import { useState } from 'react';
 
 
 const Sidebar = ({
@@ -21,7 +22,7 @@ const Sidebar = ({
                 }`}
         >
             {/* Sidebar Search Section */}
-            <div className="p-3.5 border-b border-[#26334d]">
+            <div className="mt-24 md:mt-0 p-3.5 border-b border-[#26334d]">
                 <div className="relative">
                     <Search size={14} className="absolute left-3 top-2.5 text-[#94a3b8]" />
                     <input
@@ -56,7 +57,7 @@ const Sidebar = ({
                                 aria-label="Delete Memo"
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    deleteMemo(m.id,`public/invoice-${m.inv_no}.pdf`);
+                                    deleteMemo(m.id, `public/invoice-${m.inv_no}.pdf`);
                                 }}
                                 className="p-1 text-[#ef4444] hover:bg-[#ef4444]/10 rounded transition cursor-pointer"
                             >
